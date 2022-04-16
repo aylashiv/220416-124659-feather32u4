@@ -25,10 +25,7 @@ RHReliableDatagram manager(driver, SERVER_ADDRESS);
 
 void setup() 
 {
-  // Rocket Scream Mini Ultra Pro with the RFM95W only:
-  // Ensure serial flash is not interfering with radio communication on SPI bus
-//  pinMode(4, OUTPUT);
-//  digitalWrite(4, HIGH);
+    digitalWrite(4, HIGH);
 
   Serial.begin(9600);
   while (!Serial) ; // Wait for serial port to be available
